@@ -15,11 +15,14 @@ public class apcsarighttriangle {
 
       int baseSquared = base * base;
       int heightSquared = height * height;
+      int ab = baseSquared + heightSquared;
       int hypotenuseSquared = hypotenuse * hypotenuse;
 
-      if (baseSquared + heightSquared = hypotenuseSquared) {
+      if (ab == hypotenuseSquared) {
         System.out.println("\nYes, that's a right triangle!");
-      } else if (baseSquared + heightSquared != hypotenuseSquared) {
+      }
+
+      if (ab != hypotenuseSquared) {
         System.out.println("\nNope...not a right triangle.");
       }
       in.close();
